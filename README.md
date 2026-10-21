@@ -1,6 +1,6 @@
 # Tab Dag
 
-Tab provenance for Chrome. Tab Dag records which tab opened which and draws your browsing as a directed acyclic graph (DAG).
+Tab Dag is a browser extension (a Chrome extension) for provenance tracking and provenance analysis, of your tabs. Tab Dag records which tab opened which and draws your browsing as a directed acyclic graph (DAG).
 
 Every page view becomes a node, and every "this led to that" becomes an edge. The result is a provenance graph of your browsing, so your history reads as lineage instead of a flat list. Everything is recorded locally in your browser and nothing is sent anywhere.
 
