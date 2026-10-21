@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tab Dag</title>
+<link rel="icon" href="icons/32.png">
+<link rel="stylesheet" href="viewer.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="edge-accent"></div>
+<div class="wash"></div>
+
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <span class="label">Tab Dag · which tab opened which</span>
+      <h1 class="headline">Provenance <span class="outline">graph</span></h1>
+    </div>
+    <dl class="stats" id="stats"></dl>
+    <div class="actions">
+      <button class="link" id="export" title="Download everything as JSON">Export</button>
+      <button class="link danger" id="clear" title="Delete all recorded history">Clear</button>
+    </div>
+  </header>
+
+  <nav class="controls">
+    <div class="seg" id="view" role="tablist">
+      <button data-v="graph">Graph</button>
+      <button data-v="grid">Grid</button>
+    </div>
+    <div class="seg" id="unit">
+      <button data-v="visits" title="One node per page view">Visits</button>
+      <button data-v="tabs" title="One node per tab; same-tab navigation folded">Tabs</button>
+    </div>
+    <label class="search"><span class="rule"></span><input id="q" type="search" placeholder="Filter title or URL   /" autocomplete="off" spellcheck="false"></label>
+    <div class="kinds" id="kinds"></div>
+    <div class="selects">
+      <select id="range" title="Time range">
+        <option value="all">All time</option><option value="1h">Last hour</option><option value="24h">Last 24 h</option>
+        <option value="7d">Last 7 days</option><option value="30d">Last 30 days</option>
+      </select>
+      <select id="status" title="Tab status">
+        <option value="all">Open &amp; closed</option><option value="open">Open now</option><option value="closed">Closed / left</option>
+      </select>
+      <select id="win" title="Window"></select>
+    </div>
+  </nav>
+
+  <main class="main">
+    <section class="pane" id="pane"></section>
+    <aside class="detail" id="detail" hidden></aside>
+  </main>
+
+  <footer class="bstrip"><span id="foot"></span><span id="legend"></span></footer>
+</div>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.personal
+.gfm
+
+keys/
+*.pem
+*.crx
+
+node_modules/
+.DS_Store
+Thumbs.db
+.kopiaignore
+e2e/

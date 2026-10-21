@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Dag",
+  "short_name": "Tab Dag",
+  "description": "Tab provenance as a DAG: which tab opened which, recorded locally, with a graph and a sortable, filterable grid.",
+  "version": "1.0.0",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAt+JXBgFWqrFQXzvDZqEcoX5cjkelvLZ4WjyiA00vfHWaMuQEAvDxJfFwhILEUXZO1AFyRyqBK3rj+/TnuC8h4adGIgGMkbTJxkBlgi1x5IhAUioJBXlhhUWR5H3UOFieyVR8v7EGe/0NnDl88/YoCoA0R3n7olr7AvAP7DLQO1HNoyN0h6DJQnPyQpZzh+tunA/nmo03BmwO55PwmZoVWy/G1RGXcy+WOD9dY1ZlQE9uz8Kf+Ket1I5Lo+0uW13ZrHs1Kr/pXRga02Ia75p5Z8GxPq3uahtdggNx/g39KsAAVKyWZLeWz31Lh8zyWGBrD0zJoSlTX3viFbvrZnqBVQIDAQAB",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabs", "webNavigation", "storage", "unlimitedStorage", "favicon"],
+  "background": { "service_worker": "bg.js", "type": "module" },
+  "action": {
+    "default_title": "Tab Dag",
+    "default_icon": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png" }
+  },
+  "icons": { "16": "icons/16.png", "32": "icons/32.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "commands": { "_execute_action": { "suggested_key": { "default": "Alt+Shift+P" } } }
+}
