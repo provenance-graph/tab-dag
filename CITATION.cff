@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Tab Dag
+message: "If you mention this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - name: Aesthetic Vulpes
+    alias: didvc
+    website: https://github.com/didvc
+repository-code: https://github.com/provenance-graph/tab-dag
+license:
+  - PolyForm-Noncommercial-1.0.0
+version: 1.0.0
+date-released: 2026-10-21
+abstract: >
+  Browser extension, provenance tracking for your tabs, in graph (DAG).
+keywords:
+  - dag
+  - graph
+  - extension
+  - provenance analysis
+  - web graph
+  - graph network
+  - activity graph
